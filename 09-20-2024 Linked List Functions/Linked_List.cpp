@@ -6,7 +6,7 @@ struct ListNode
 {
     int data;
     struct ListNode* next;
-} *head = NULL, *last = NULL;
+} *head = NULL, * last = NULL;
 
 struct ListNode* memo(int data)
 {
@@ -48,6 +48,12 @@ void Print() {
     cout << temp->data << " -> NULL" << endl;
 }
 
+void Insert_At_Begining(int data) {
+    struct ListNode* link = memo(data);
+    link->next = head;
+    head = link;
+}
+
 int main() {
 
     // Create(5);
@@ -58,6 +64,10 @@ int main() {
         Create(Data[i]);
     }
     cout << "Original Linked List: ";
+    Print();
+
+    Insert_At_Begining(10);
+    cout << "After Insert At Begining : ";
     Print();
 
     return 0;
