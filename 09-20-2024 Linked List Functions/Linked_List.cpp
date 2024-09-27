@@ -43,7 +43,7 @@ void Create(int data) {
 void Print() {
     struct ListNode* temp = head;
 
-    while (temp != last) {
+    while (temp->next != NULL) {
         cout << temp->data << " -> ";
         temp = temp->next;
     }
@@ -123,6 +123,14 @@ void Delete_At_Last() {
     delete temp;
 }
 
+void Print_Reverse(ListNode* curr) {
+    if (curr->next != NULL) {
+        Print_Reverse(curr->next);
+    }
+
+    cout << curr->data << " -> ";
+}
+
 int main() {
 
     vector<int> Data = { 89,76,43,32,90,87,21,56,98 };
@@ -153,6 +161,9 @@ int main() {
     Delete_At_Last();
     cout << "After Deleting at Last :- ";
     Print();
+
+    cout << "Reversed Linked List :-";
+    Print_Reverse(head);
 
 
     return 0;
