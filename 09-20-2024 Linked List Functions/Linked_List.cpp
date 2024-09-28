@@ -102,14 +102,13 @@ void Insert_At_Any_Point(int data, int pos) {
     return;
 }
 
-
 void Delete_Head() {
     struct ListNode* temp = head;
     head = head->next;
     delete temp;
 
     return;
-}
+} 
 
 void Delete_At_Last() {
     struct ListNode* temp = head;
@@ -164,7 +163,6 @@ int main() {
 
     cout << "Reversed Linked List :-";
     Print_Reverse(head);
-
 
     return 0;
 }

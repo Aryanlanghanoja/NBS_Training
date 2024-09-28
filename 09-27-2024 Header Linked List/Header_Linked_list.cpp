@@ -12,7 +12,7 @@ struct ListNode* memo(int data)
 {
     struct ListNode* List = (struct ListNode*)malloc(1 * sizeof(struct ListNode));
 
-    if (List == NULL) {
+    if (List == NULL) {   
         cout << "Memory Is Not Found";
         exit(1);
     }
@@ -83,4 +83,4 @@ int main() {
     cout << "After Insert At Begining : ";
     Print();
 
-}
+} 
