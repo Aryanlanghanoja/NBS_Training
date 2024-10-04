@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "A",
+      "request": "launch",
+      "mainClass": "A",
+      "projectName": "09-11-2024 Structures & Pointers_dc3e9bd4"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",

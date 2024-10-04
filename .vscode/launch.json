@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "d:/Aryan Data/Usefull Data/NBS_Training/10-04-2024 Vector",
+      "program": "d:/Aryan Data/Usefull Data/NBS_Training/10-04-2024 Vector/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
