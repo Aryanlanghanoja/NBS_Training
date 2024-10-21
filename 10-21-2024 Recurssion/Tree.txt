@@ -1,0 +1,5 @@
+Complete Binary Tree :- A Complete Binary Tree is a Specific type of binry tree where very level ,except possible the last,is compltely filed.all nodes are as far as left possible.
+
+Extended Binary Tree :- Each node ishaving 0 or 2 childs.
+
+in array represenatation of the tree the left child is at 2n+1 and right child 2n+2 where n is the inex of parent node.
